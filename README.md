@@ -1,3 +1,3 @@
 # cloud-resume-challenge
 
-[] Certification
+- [x] Certification
