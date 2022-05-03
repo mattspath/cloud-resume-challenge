@@ -1,4 +1,5 @@
 # cloud-resume-challenge
+https://cloudresumechallenge.dev/docs/the-challenge/aws/
 
 - [x] Certification
 - [x] HTML
