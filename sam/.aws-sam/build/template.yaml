@@ -1,32 +1,51 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Serverless patterns - Amazon API Gateway to AWS Lambda to Amazon DynamoDB
+Globals:
+  Api:
+    Cors:
+      AllowMethods: '''GET,POST,OPTIONS'''
+      AllowHeaders: '''content-type'''
+      AllowOrigin: '''*'''
+      AllowCredentials: '''*'''
+  Function:
+    Timeout: 3
 Resources:
-  LambdaFunction:
+  LambdaFunctionName:
     Type: AWS::Serverless::Function
     Description: Lambda function inserts data into DynamoDB table
     Properties:
       FunctionName: SiteCounter
       Handler: index.lambda_handler
       Runtime: python3.9
-      CodeUri: LambdaFunction
+      CodeUri: LambdaFunctionName
       Policies:
         DynamoDBCrudPolicy:
           TableName:
             Ref: DynamoDBTable
       Events:
-        ApiEvent:
+        ApiEventName:
           Type: Api
           Properties:
-            Path: /
-            Method: POST
+            Path: /visitor_count
+            Method: GET
     Metadata:
-      SamResourceId: LambdaFunction
+      SamResourceId: LambdaFunctionName
   DynamoDBTable:
     Type: AWS::Serverless::SimpleTable
     Properties:
       TableName: SiteCounter
 Outputs:
+  VisitorCountApi:
+    Description: API Gateway endpoint URL for Prod stage for Visitor Count function
+    Value:
+      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/visitor_count/
+  LambdaFunctionName:
+    Description: Visitor Count Lambda Function ARN
+    Value:
+      Fn::GetAtt:
+      - LambdaFunctionName
+      - Arn
   EndpointUrl:
     Description: HTTP REST endpoint URL
     Value:

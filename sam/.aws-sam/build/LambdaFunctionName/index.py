@@ -13,6 +13,7 @@ ddbTableName = 'SiteCounter'
 table = dynamodb.Table(ddbTableName)
 
 
+
 def lambda_handler(event, context):
     # Update item in table or add if doesn't exist
     ddbResponse = table.update_item(
