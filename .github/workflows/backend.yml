@@ -55,7 +55,7 @@ jobs:
           python-version: '3.9'
           architecture: 'x64'
     - run: pip install --upgrade --user boto3
-    - run: python src/test.py
+    - run: python sam/src/test.py
 
     - name: sam validate
       uses: youyo/aws-sam-action@v1.0.0
