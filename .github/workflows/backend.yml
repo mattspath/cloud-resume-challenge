@@ -64,7 +64,7 @@ jobs:
         sam_command: validate
 
     - name: sam build
-      uses: youyo/aws-sam-action@v1.0.0
+      uses: youyo/aws-sam-action/python3.8@v2
       with:
         sam_command: build
 
