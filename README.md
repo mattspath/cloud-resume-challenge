@@ -7,10 +7,10 @@ https://cloudresumechallenge.dev/docs/the-challenge/aws/
 - [X] Static Website
 - [X] HTTPS
 - [X] DNS
-- [ ] Javascript
-- [ ] Database
-- [ ] API
-- [ ] Python
+- [X] Javascript
+- [X] Database
+- [X] API
+- [X] Python
 - [ ] Tests
 - [ ] Infrastructure as Code
 - [ ] Source Control
