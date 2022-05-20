@@ -35,18 +35,18 @@ jobs:
 #        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 #          # AWS Session Token
 #        aws-session-token: # optional
-          # AWS Region, e.g. us-east-2
+        # AWS Region, e.g. us-east-2
         aws-region: ${{ secrets.AWS_REGION }}
         # Whether to set the AWS account ID for these credentials as a secret value, so that it is masked in logs. Valid values are 'true' and 'false'. Defaults to true
 #       mask-aws-account-id: # optional
 #         # Use the provided credentials to assume an IAM role and configure the Actions environment with the assumed role credentials rather than with the provided credentials
         role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }} # optional
 #         # The external ID of the role to assume
-        role-external-id: ${{ secrets.AWS_ROLE_EXTERNAL_ID }} # optional
+#        role-external-id: ${{ secrets.AWS_ROLE_EXTERNAL_ID }} # optional
 #         # Role duration in seconds (default: 6 hours)
         role-duration-seconds: 1200 # optional
 #         # Role session name (default: GitHubActions)
-         role-session-name: MySessionName # optional
+#        role-session-name: MySessionName # optional
 
 
     - name: run python test
