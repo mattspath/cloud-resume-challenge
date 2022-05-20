@@ -71,4 +71,4 @@ jobs:
     - name: sam deploy
       uses: youyo/aws-sam-action@v1.0.0
       with:
-        sam_command: deploy
+        sam_command: deploy --no-confirm-changeset
