@@ -35,7 +35,7 @@ Resources:
     Properties:
       FunctionName: SiteCounter
       Handler: index.lambda_handler
-      Runtime: python3
+      Runtime: python3.8
       CodeUri: src/
 
       Policies: #Need to see how to connect this
