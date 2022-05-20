@@ -17,11 +17,11 @@ def lambda_handler(event, context):
     # Update item in table or add if doesn't exist
     ddbResponse = table.update_item(
         Key={
-            'id': 'visitor_count'
+            'id': 'count'
         },
-        UpdateExpression='SET visitor_count = visitor_count + :value',
+        UpdateExpression='SET visitor_count = visitor_count + :incr',
         ExpressionAttributeValues={
-            ':value':1
+            ':incr':1
         },
         ReturnValues="UPDATED_NEW"
     )
