@@ -50,7 +50,7 @@ jobs:
 
 
     - name: run python test
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v3
       with:
           python-version: '3.9'
           architecture: 'x64'
@@ -65,8 +65,6 @@ jobs:
     - name: sam build
       uses: youyo/aws-sam-action@v1.0.0
       with:
-        python-version: "3.9"
-        architecture: "x64"
         sam_command: build
 
     - name: sam deploy
