@@ -11,9 +11,9 @@ https://cloudresumechallenge.dev/docs/the-challenge/aws/
 - [X] Database
 - [X] API
 - [X] Python
-- [ ] Tests
-- [ ] Infrastructure as Code
-- [ ] Source Control
-- [ ] CI/CD (Back End)
-- [ ] CI/CD (Front End)
+- [X] Tests
+- [X] Infrastructure as Code
+- [X] Source Control
+- [X] CI/CD (Back End)
+- [X] CI/CD (Front End)
 - [ ] Blog Post
