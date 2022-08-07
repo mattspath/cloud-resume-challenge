@@ -2,7 +2,7 @@
 
 ## Cloud Resume Challenge using SAM
 
-Read my ![DEV post](https://dev.to/mattspath/cloud-resume-challenge-blog-post-getting-hands-on-with-aws-sam-and-cicd-pipelines-nn-temp-slug-5063492?preview=c1ee0db3638df6fccb4198553ada630b21d20dd3007b2993d637c3b50f881b8df2669862e5c82f06621e2915b7dd590cfb6ab66a0edf2f2bf8ecaa52) about my experience completing this challenge
+Read my ![DEV post](https://dev.to/mattspath/cloud-resume-challenge-aws-a3e) about my experience completing this challenge
 
 
 ## cloud-resume-challenge
