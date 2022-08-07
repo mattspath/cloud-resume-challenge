@@ -2,7 +2,7 @@
 
 ## Cloud Resume Challenge using SAM
 
-Read my ![DEV post](https://dev.to/mattspath/cloud-resume-challenge-aws-a3e) about my experience completing this challenge
+Read my [DEV post](https://dev.to/mattspath/cloud-resume-challenge-aws-a3e) about my experience completing this challenge
 
 
 ## cloud-resume-challenge
