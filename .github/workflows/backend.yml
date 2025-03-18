@@ -59,16 +59,10 @@ jobs:
     - run: python --version
 
     - name: sam validate
-      uses: youyo/aws-sam-action@v1.0.0
+      uses: aws-actions/setup-sam@v2
       with:
         sam_command: validate
 
-    - name: sam build
-      uses: youyo/aws-sam-action/python3.8@v2
-      with:
-        sam_command: build
+    - run: sam build --use-container
 
-    - name: sam deploy
-      uses: youyo/aws-sam-action@v1.0.0
-      with:
-        sam_command: deploy --no-confirm-changeset
+    - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
